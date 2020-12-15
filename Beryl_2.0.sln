@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Beryl_2.0", "Beryl_2.0\Beryl_2.0.vcxproj", "{5643E5FD-07EB-4066-B3B0-3DEB2F5A9CB4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{D27DD5CC-AB69-45D0-A82F-9958AC3D75AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5643E5FD-07EB-4066-B3B0-3DEB2F5A9CB4}.Debug|x64.ActiveCfg = Debug|x64
+		{5643E5FD-07EB-4066-B3B0-3DEB2F5A9CB4}.Debug|x64.Build.0 = Debug|x64
+		{5643E5FD-07EB-4066-B3B0-3DEB2F5A9CB4}.Release|x64.ActiveCfg = Release|x64
+		{5643E5FD-07EB-4066-B3B0-3DEB2F5A9CB4}.Release|x64.Build.0 = Release|x64
+		{D27DD5CC-AB69-45D0-A82F-9958AC3D75AF}.Debug|x64.ActiveCfg = Debug|x64
+		{D27DD5CC-AB69-45D0-A82F-9958AC3D75AF}.Debug|x64.Build.0 = Debug|x64
+		{D27DD5CC-AB69-45D0-A82F-9958AC3D75AF}.Release|x64.ActiveCfg = Release|x64
+		{D27DD5CC-AB69-45D0-A82F-9958AC3D75AF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24E3D465-118C-4F70-883F-12ACFF10022E}
+	EndGlobalSection
+EndGlobal
