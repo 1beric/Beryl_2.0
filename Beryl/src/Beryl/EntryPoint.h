@@ -6,7 +6,12 @@ extern Beryl::Application* Beryl::CreateApplication();
 
 int main(int argc, char **argv) 
 {
-	auto app = Beryl::CreateApplication();
+	Beryl::Log::Init();
+	BL_CORE_WARN("Initialized Log!");
+	int a = 5;
+	BL_INFO("Initialized Log! {0}", a);
+
+	Beryl::Application* app = Beryl::CreateApplication();
 	app->Run();
 	delete app;
 }

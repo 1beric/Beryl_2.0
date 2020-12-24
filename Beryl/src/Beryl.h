@@ -3,7 +3,7 @@
 // for use by Beryl applications
 
 #include "Beryl/Application.h"
-#include "Beryl/Core.h"
+//#include "Beryl/Log.h"
 
 
 // -------- ENTRY POINT ----------

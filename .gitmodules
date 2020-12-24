@@ -1,0 +1,6 @@
+[submodule "Beryl_2.0/vendor/spdlog"]
+	path = Beryl_2.0/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "Beryl/vendor/GLFW"]
+	path = Beryl/vendor/GLFW
+	url = https://github.com/TheCherno/GLFW

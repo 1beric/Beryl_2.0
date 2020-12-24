@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Beryl">
+      <UniqueIdentifier>{A3A8E20C-0FBD-0ABE-D83E-AE1D441207EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Beryl\Events">
+      <UniqueIdentifier>{27DFB5E7-1342-458C-BCC7-7D42A809110F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Beryl.h" />
+    <ClInclude Include="src\Beryl\Application.h">
+      <Filter>Beryl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Beryl\Core.h">
+      <Filter>Beryl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Beryl\EntryPoint.h">
+      <Filter>Beryl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Beryl\Events\ApplicationEvent.h">
+      <Filter>Beryl\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Beryl\Events\Event.h">
+      <Filter>Beryl\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Beryl\Events\KeyEvent.h">
+      <Filter>Beryl\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Beryl\Events\MouseEvent.h">
+      <Filter>Beryl\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Beryl\Log.h">
+      <Filter>Beryl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Beryl\Window.h">
+      <Filter>Beryl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\blpch.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\WindowsWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Beryl\Application.cpp">
+      <Filter>Beryl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Beryl\Log.cpp">
+      <Filter>Beryl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blpch.cpp" />
+  </ItemGroup>
+</Project>
