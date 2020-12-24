@@ -11,8 +11,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Beryl/vendor/GLFW/include"
+IncludeDir["Glad"] = "Beryl/vendor/Glad/include"
 
 include "Beryl/vendor/GLFW"
+include "Beryl/vendor/Glad"
 
 project "Beryl"
 	location "Beryl"
@@ -35,12 +37,14 @@ project "Beryl"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -53,7 +57,8 @@ project "Beryl"
 		defines
 		{
 			"BL_PLATFORM_WINDOWS",
-			"BL_BUILD_DLL"
+			"BL_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands

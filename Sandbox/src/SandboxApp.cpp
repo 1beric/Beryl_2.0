@@ -21,11 +21,6 @@ public:
 
 };
 
-
-
-
-
-
 class Sandbox : public Beryl::Application
 {
 
