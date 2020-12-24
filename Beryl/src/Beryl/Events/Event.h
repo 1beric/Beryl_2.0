@@ -42,6 +42,8 @@ namespace Beryl
 		{
 			return GetCategoryFlags() & category;
 		}
+		inline bool Handled() const { return m_Handled; }
+
 	protected:
 		bool  m_Handled = false;
 	};
@@ -53,6 +55,7 @@ namespace Beryl
 	public:
 		EventDispatcher(Event& event)
 			: m_Event(event) {}
+
 
 		template<typename T>
 		bool Dispatch(EventFn<T> func)

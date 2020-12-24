@@ -63,14 +63,17 @@ project "Beryl"
 
 	filter "configurations:Debug"
 		defines "BL_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "BL_Release"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "BL_Dist"
+		buildoptions "/MD"
 		optimize "On"
 
 
@@ -112,12 +115,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "BL_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "BL_Release"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "BL_Dist"
+		buildoptions "/MD"
 		optimize "On"

@@ -37,18 +37,32 @@
     <ClInclude Include="src\Beryl\Events\MouseEvent.h">
       <Filter>Beryl\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Beryl\Layer.h">
+      <Filter>Beryl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Beryl\LayerStack.h">
+      <Filter>Beryl</Filter>
+    </ClInclude>
     <ClInclude Include="src\Beryl\Log.h">
       <Filter>Beryl</Filter>
     </ClInclude>
     <ClInclude Include="src\Beryl\Window.h">
       <Filter>Beryl</Filter>
     </ClInclude>
-    <ClInclude Include="src\blpch.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\WindowsWindow.h" />
+    <ClInclude Include="src\blpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Beryl\Application.cpp">
+      <Filter>Beryl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Beryl\Layer.cpp">
+      <Filter>Beryl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Beryl\LayerStack.cpp">
       <Filter>Beryl</Filter>
     </ClCompile>
     <ClCompile Include="src\Beryl\Log.cpp">
