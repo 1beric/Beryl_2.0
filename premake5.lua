@@ -12,9 +12,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "Beryl/vendor/GLFW/include"
 IncludeDir["Glad"] = "Beryl/vendor/Glad/include"
+IncludeDir["imgui"] = "Beryl/vendor/imgui"
 
 include "Beryl/vendor/GLFW"
 include "Beryl/vendor/Glad"
+include "Beryl/vendor/imgui"
 
 project "Beryl"
 	location "Beryl"
@@ -38,6 +40,7 @@ project "Beryl"
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.imgui}",
 		"%{IncludeDir.Glad}"
 	}
 
@@ -45,6 +48,7 @@ project "Beryl"
 	{
 		"GLFW",
 		"Glad",
+		"ImGui",
 		"opengl32.lib"
 	}
 

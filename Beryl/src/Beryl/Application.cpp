@@ -8,6 +8,8 @@
 namespace Beryl {
 	#define BIND_EVENT_FUNCTION(x)std::bind(&Application::x, this, std::placeholders::_1)
 
+	Application* Application::s_Instance = nullptr;
+
 	Application::Application() { 
 		m_Window = std::unique_ptr<Window>(Window::Create());
 		m_Window->SetEventCallback(BIND_EVENT_FUNCTION(OnEvent));
@@ -15,6 +17,8 @@ namespace Beryl {
 		unsigned int id;
 		glGenVertexArrays(1, &id);
 
+		BL_CORE_ASSERT(!instance, "Two applications cannot be created.")
+		s_Instance = this;
 	}
 
 	Application::~Application() {}
@@ -22,11 +26,13 @@ namespace Beryl {
 	void Application::PushLayer(Layer* layer)
 	{
 		m_LayerStack.PushLayer(layer);
+		layer->OnAttach();
 	}
 	
 	void Application::PushOverlay(Layer* overlay)
 	{
 		m_LayerStack.PushOverlay(overlay);
+		overlay->OnAttach();
 	}
 
 	void Application::OnEvent(Event& e)
